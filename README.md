@@ -16,13 +16,11 @@ The second hidden layer will be smaller, let's give it 64 neurons. Probably will
 
 The output layer will consist of 10 neurons. Don't think I have more to say here rn. 
 
-### What about the training?
-
-I don't really know. Guess I will have to engineer my own backpropagation algo, yay. 
-
-Should probbbly write smth more here, TODO.
+The training. Well, we will see. TODO.
 
 ## Getting & preparing the dataset
+
+# The layers.
 
 ## The first hidden layer
 
@@ -44,4 +42,6 @@ The output layer will obviously have 10 nodes. Activation function softmax.
 
 # The learning, backpropagation and other stuff.
 
-Help.
+I don't really know. Guess I will have to engineer my own backpropagation algo, yay. 
+
+Should probbbly write smth more here, TODO.
