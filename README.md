@@ -32,4 +32,16 @@ How to do this really? Perhaps a simple function. Guessing which input format wi
 
 Lets initiate those weights and biases randomly at first. 
 
-Activation function will be relu. I am yet to discover why is it more prefered than others. For now, I believe the cool guys on the internet know what they're saying.
+Activation function will be relu. I am yet to discover why is it more prefered than others. For now, I believe the cool guys on the internet know what they're saying. And that it just means y = max{0, x}.
+
+## The other layers
+
+The other layers should be similar? Well, the other hidden layer at least. Let's give the second hidden layer 64 nodes.
+
+## The output layer
+
+The output layer will obviously have 10 nodes. Activation function softmax.
+
+# The learning, backpropagation and other stuff.
+
+Help.
