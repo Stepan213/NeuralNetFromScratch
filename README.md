@@ -1,47 +1,33 @@
-# Building an image classification neural network from scratch.
+# Building a neural network in Python*
+* from scratch, without any ML libraries.
 
-I know all the stuff I need to know, but I don't really know what I am doing.
+_A 24 hour challenge to build an MNIST 10 digit classifier in Python while avoiding the use of any machine learning libraries_
 
-At first, I wanted to do a binary classification NN that would distinguish between our two cats, Julie and Steiner. However, that would add another challenge: dealing with a tiny dataset (~200 photos). Therefore, I am sticking with the classical MNIST handwritten digit classification.
+## Rules. ##
 
-## And so, where do I start? Rough architecture & training plan.
+**1. 24 hours to finish.**
+**2. No looking at other solutions to this challenge.** 
+**3. No using ML Python libraries such as TensorFlow.** (For building the NN.)
+**4. Having fun.**
 
-I have "a few" images of digits 0, 1, ... 9. Each image is B&W, 28x28 = 784 pixels. Now what.
+## Initial notes, current state, rough plan. ##
 
-Given my experience with TensorFlow, I consider it sufficient to plan for four layers in total: input layer (784 nodes), output layer (10 nodes), and two hidden layers.
+I am doing this project right after completing the DeepLearning.AI TensorFlow Developer course. I know Python quite well and did multivariable calculus last semester. I might miss some software architecture skills. (TODO perhaps?) 
 
-In goes 784 numbers. Let's say the first hidden layer will have 256 neurons. So thats 256 784-variable functions, "preferably" non-linear. Getting flashbacks from my multivariable calculus rn, though no big deal.
+I am currently able to put together some basic models with TensorFlow. I have quite good understanding of the structure of a neural network, and a very rough understanding of backpropagation. 
 
-The second hidden layer will be smaller, let's give it 64 neurons. Probably will use the same functions as the first hidden layer.
+The project will therefore go this way. I am just guessing, I don't really know: 
+1. Outlie the main parts & biggest challenges.
+2. Gain more knowledge on the learning part. 
+3. Provide solution on data preparation.
+4. Prepare the structure of the code for the neural network, think out the learning process meanwhile.
+5. ??? Too far in the future. 
 
-The output layer will consist of 10 neurons. Don't think I have more to say here rn. 
+## Logs. ##
 
-The training. Well, we will see. TODO.
+[21:00] **The start of the challenge.**
+[21:27] Finished writing the initial version of this README.
 
-## Getting & preparing the dataset
+## More detailed comments on the project. ##
 
-# The layers.
-
-## The first hidden layer
-
-There are 784 inputs to each node, no big deal. Each input will be multiplied by some weight, a bias will be added and then it will go through some activation function. Easy.
-
-How to do this really? Perhaps a simple function. Guessing which input format will be best for my 784 values, a plain list will do. I will also store the weights and biases in a list. Were I inclined toward grandiloquence, I would bestow upon it the appellation of ‘vector’. Howsoever.
-
-Lets initiate those weights and biases randomly at first. 
-
-Activation function will be relu. I am yet to discover why is it more prefered than others. For now, I believe the cool guys on the internet know what they're saying. And that it just means y = max{0, x}.
-
-## The other layers
-
-The other layers should be similar? Well, the other hidden layer at least. Let's give the second hidden layer 64 nodes.
-
-## The output layer
-
-The output layer will obviously have 10 nodes. Activation function softmax.
-
-# The learning, backpropagation and other stuff.
-
-I don't really know. Guess I will have to engineer my own backpropagation algo, yay. 
-
-Should probbbly write smth more here, TODO.
+**_TODO_** Will fill in once the project is completed, out of the 24 timer. 
